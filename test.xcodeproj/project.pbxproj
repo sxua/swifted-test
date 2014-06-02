@@ -12,10 +12,16 @@
 		A0D13376193D2BA3008EC79B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D13375193D2BA3008EC79B /* ViewController.swift */; };
 		A0D13379193D2BA3008EC79B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D13377193D2BA3008EC79B /* Main.storyboard */; };
 		A0D1337B193D2BA3008EC79B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D1337A193D2BA3008EC79B /* Images.xcassets */; };
-		A0D13387193D2BA3008EC79B /* testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D13386193D2BA3008EC79B /* testTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A091A9CF193D4693006B5FF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0D13363193D2BA3008EC79B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0D1336A193D2BA3008EC79B;
+			remoteInfo = test;
+		};
 		A0D13381193D2BA3008EC79B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A0D13363193D2BA3008EC79B /* Project object */;
@@ -34,8 +40,6 @@
 		A0D13378193D2BA3008EC79B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0D1337A193D2BA3008EC79B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A0D13380193D2BA3008EC79B /* testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0D13385193D2BA3008EC79B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0D13386193D2BA3008EC79B /* testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				A0D1336D193D2BA3008EC79B /* test */,
-				A0D13383193D2BA3008EC79B /* testTests */,
 				A0D1336C193D2BA3008EC79B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,23 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				A0D1336F193D2BA3008EC79B /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A0D13383193D2BA3008EC79B /* testTests */ = {
-			isa = PBXGroup;
-			children = (
-				A0D13386193D2BA3008EC79B /* testTests.swift */,
-				A0D13384193D2BA3008EC79B /* Supporting Files */,
-			);
-			path = testTests;
-			sourceTree = "<group>";
-		};
-		A0D13384193D2BA3008EC79B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A0D13385193D2BA3008EC79B /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -144,6 +130,7 @@
 			);
 			dependencies = (
 				A0D13382193D2BA3008EC79B /* PBXTargetDependency */,
+				A091A9D0193D4693006B5FF6 /* PBXTargetDependency */,
 			);
 			name = testTests;
 			productName = testTests;
@@ -221,13 +208,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0D13387193D2BA3008EC79B /* testTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A091A9D0193D4693006B5FF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0D1336A193D2BA3008EC79B /* test */;
+			targetProxy = A091A9CF193D4693006B5FF6 /* PBXContainerItemProxy */;
+		};
 		A0D13382193D2BA3008EC79B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A0D1336A193D2BA3008EC79B /* test */;
@@ -401,6 +392,7 @@
 				A0D1338C193D2BA3008EC79B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0D1338D193D2BA3008EC79B /* Build configuration list for PBXNativeTarget "testTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +401,7 @@
 				A0D1338F193D2BA3008EC79B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
